@@ -1,0 +1,87 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #fff;
+  color: #111;
+  line-height: 1.6;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+nav a {
+  font-size: .9rem;
+  color: #888;
+  text-decoration: none;
+}
+
+nav a:hover { color: #111; }
+nav a.active { color: #111; font-weight: 600; }
+
+h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+h2 { font-size: 1.25rem; font-weight: 600; margin-bottom: 16px; }
+h3 { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
+
+p { color: #444; margin-bottom: 12px; }
+
+.meta { color: #888; font-size: .875rem; margin-bottom: 32px; }
+
+hr { border: none; border-top: 1px solid #eee; margin: 32px 0; }
+
+.skill-group { margin-bottom: 20px; }
+.skill-group span {
+  display: inline-block;
+  background: #f4f4f4;
+  color: #333;
+  font-size: .8rem;
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin: 3px 3px 3px 0;
+}
+
+.project { margin-bottom: 28px; }
+.project p { margin-bottom: 6px; }
+.tags { font-size: .8rem; color: #888; }
+
+.contact-links { list-style: none; margin-bottom: 32px; }
+.contact-links li { margin-bottom: 8px; }
+.contact-links a { color: #111; font-size: .9rem; }
+.contact-links a:hover { text-decoration: underline; }
+
+input, textarea {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: .9rem;
+  color: #111;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+input:focus, textarea:focus { border-color: #111; }
+textarea { min-height: 100px; resize: vertical; }
+
+label { font-size: .8rem; color: #666; display: block; margin-bottom: 4px; }
+
+button {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+button:hover { background: #333; }
+
+.success { color: green; font-size: .875rem; margin-top: 10px; display: none; }
