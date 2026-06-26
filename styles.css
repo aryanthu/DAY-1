@@ -5,24 +5,31 @@
 }
 
 body {
-  background: #0f0f0f;
-  color: white;
+  background-color: #111;
+  color: #fff;
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
+
+/* HEADER */
 
 .site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
-  background: #111;
+  padding: 20px 80px;
+  background-color: #1a1a1a;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 20px;
 }
 
 .site-header nav a {
-  color: white;
   text-decoration: none;
-  margin-left: 20px;
+  color: #ccc;
+  font-size: 18px;
   transition: 0.3s;
 }
 
@@ -31,61 +38,62 @@ body {
   color: #ff3c3c;
 }
 
-.brand img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
+/* HERO SECTION */
 
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 60px;
-  min-height: 80vh;
+  padding: 80px;
+  min-height: 85vh;
+  gap: 60px;
 }
 
 .hero-copy {
-  max-width: 600px;
+  flex: 1;
 }
 
 .eyebrow {
   color: #ff3c3c;
-  margin-bottom: 10px;
   font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: 64px;
   margin-bottom: 20px;
 }
 
 .intro {
-  font-size: 1.1rem;
+  font-size: 20px;
   color: #cccccc;
   margin-bottom: 30px;
+  max-width: 700px;
 }
+
+/* BUTTONS */
 
 .actions {
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
 .button {
-  padding: 12px 24px;
-  border-radius: 8px;
   text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 8px;
   font-weight: bold;
   transition: 0.3s;
 }
 
 .primary {
-  background: #ff3c3c;
+  background-color: #ff3c3c;
   color: white;
 }
 
 .primary:hover {
-  background: #ff1f1f;
+  background-color: #ff1f1f;
 }
 
 .secondary {
@@ -94,11 +102,45 @@ body {
 }
 
 .secondary:hover {
-  background: #ff3c3c;
+  background-color: #ff3c3c;
 }
 
+/* IMAGE */
+
 .hero-portrait img {
-  width: 320px;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
   border-radius: 20px;
   border: 4px solid #ff3c3c;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .site-header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero-portrait img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .actions {
+    justify-content: center;
+  }
 }
