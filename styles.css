@@ -1,87 +1,104 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-family: system-ui, sans-serif;
-  background: #fff;
-  color: #111;
+  background: #0f0f0f;
+  color: white;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 40px 24px;
 }
 
-nav {
+.site-header {
   display: flex;
-  gap: 24px;
-  margin-bottom: 64px;
-}
-
-nav a {
-  font-size: .9rem;
-  color: #888;
-  text-decoration: none;
-}
-
-nav a:hover { color: #111; }
-nav a.active { color: #111; font-weight: 600; }
-
-h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
-h2 { font-size: 1.25rem; font-weight: 600; margin-bottom: 16px; }
-h3 { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
-
-p { color: #444; margin-bottom: 12px; }
-
-.meta { color: #888; font-size: .875rem; margin-bottom: 32px; }
-
-hr { border: none; border-top: 1px solid #eee; margin: 32px 0; }
-
-.skill-group { margin-bottom: 20px; }
-.skill-group span {
-  display: inline-block;
-  background: #f4f4f4;
-  color: #333;
-  font-size: .8rem;
-  padding: 3px 10px;
-  border-radius: 4px;
-  margin: 3px 3px 3px 0;
-}
-
-.project { margin-bottom: 28px; }
-.project p { margin-bottom: 6px; }
-.tags { font-size: .8rem; color: #888; }
-
-.contact-links { list-style: none; margin-bottom: 32px; }
-.contact-links li { margin-bottom: 8px; }
-.contact-links a { color: #111; font-size: .9rem; }
-.contact-links a:hover { text-decoration: underline; }
-
-input, textarea {
-  width: 100%;
-  padding: 9px 12px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-family: inherit;
-  font-size: .9rem;
-  color: #111;
-  margin-bottom: 12px;
-  outline: none;
-}
-
-input:focus, textarea:focus { border-color: #111; }
-textarea { min-height: 100px; resize: vertical; }
-
-label { font-size: .8rem; color: #666; display: block; margin-bottom: 4px; }
-
-button {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
   background: #111;
-  color: #fff;
-  border: none;
-  padding: 10px 22px;
-  border-radius: 6px;
-  font-size: .9rem;
-  cursor: pointer;
 }
 
-button:hover { background: #333; }
+.site-header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+}
 
-.success { color: green; font-size: .875rem; margin-top: 10px; display: none; }
+.site-header nav a:hover,
+.site-header nav a.active {
+  color: #ff3c3c;
+}
+
+.brand img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  min-height: 80vh;
+}
+
+.hero-copy {
+  max-width: 600px;
+}
+
+.eyebrow {
+  color: #ff3c3c;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.intro {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 30px;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+}
+
+.button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #ff3c3c;
+  color: white;
+}
+
+.primary:hover {
+  background: #ff1f1f;
+}
+
+.secondary {
+  border: 2px solid #ff3c3c;
+  color: white;
+}
+
+.secondary:hover {
+  background: #ff3c3c;
+}
+
+.hero-portrait img {
+  width: 320px;
+  border-radius: 20px;
+  border: 4px solid #ff3c3c;
+}
